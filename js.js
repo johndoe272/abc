@@ -294,7 +294,7 @@ function addField(item){
 // 单行文字
 function addInput(){
 	addField({
-		// 类型
+		// 类型  
 		type : TYPE_INPUT,
 		// 默认值
 		default : '',
