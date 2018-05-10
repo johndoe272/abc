@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" type="text/css" href="ionicons-2.0.1/css/ionicons.css">
+	<meta charset="utf-8">
+	<title>在线考试</title>
+</head>
+<body>
+	<div class="main">
+		<div class="left">
+			<div id="content" class="content">
+
+			</div>
+		</div>
+		<div class="right">
+			<div>
+				<span onclick="addEdit()">添加字段</span>
+				<span onclick="switchEdit()">编辑字段</span>
+				<span>表单样式</span>
+			</div>
+			<div class="add" id="add">
+				<span onclick="addInput()">单行文字</span>
+				<span onclick="addTextarea()">多行文字</span>
+				<span onclick="addRadio()">单项选择</span>
+				<span onclick="addCheckbox()">多项选择</span>
+				<div onclick="saveDate()">
+				保存表单
+			</div>
+			</div>
+			
+			<div class="modify" id="modify">
+				<div id="typeTitle">
+					
+				</div>
+				<div>
+					<p>标题</p>
+					<input placeholder="未命名" id="unnamed" oninput="inputName()">
+				</div>
+				<div id="defaul">
+
+				</div>
+				<div id="prompt">
+					<p>提示</p>
+					<textarea id="promptArea" onkeyup="inputHint()"></textarea>
+				</div>
+				<div>
+					<span onclick="addEdit()">添加字段</span>
+					<span onclick="saveDate()">
+						保存表单
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
